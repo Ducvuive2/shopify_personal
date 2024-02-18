@@ -1,0 +1,40 @@
+### OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### Node modules
+node_modules
+
+### Local config files
+config.yml
+theme.lock
+
+### Logs
+*.log
+
+### Compiled CSS
+src/css/*
+
+assets/*.map
+assets/se-*.min.js
+assets/se-*.vendor.js
+assets/se-*.vendor-*.js
+assets/*.js.LICENSE
+
+config/settings_data.json
+package-lock.json
+*.code-snippets
+BespokeShipping.php.bak
+analyze-report.html
+bundle-stats.html
+.vscode/
+BespokeShipping_debug.php
+BespokeShipping_debug.php.bak
+
+# but not these files
+!assets/se-libs.min.js
