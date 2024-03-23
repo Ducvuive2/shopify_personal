@@ -4,15 +4,15 @@
       <form action="/search" method="get" role="search">
         <input class="form-control mb-4 rounded-0 form-control-lg" type="search" name="q" value="{{ search.terms | escape }}">
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" id="product_type" name="type" value="product">
+          <input class="form-check-input" type="checkbox" id="product_type" name="type1" value="product">
           <label class="form-check-label" for="product_type">Product</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" id="article_type" name="type" value="article">
+          <input class="form-check-input" type="checkbox" id="article_type" name="type1" value="article">
           <label class="form-check-label" for="article_type">Article</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" id="page_type" name="type" value="page">
+          <input class="form-check-input" type="checkbox" id="page_type" name="type1" value="page">
           <label class="form-check-label" for="page_type">Page</label>
         </div>
         <button class="btn btn-primary" type="submit">Search</button>
