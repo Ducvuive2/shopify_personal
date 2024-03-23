@@ -1,0 +1,58 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "title": "Example Heading",
+          "description": "<p>Example paragraph<\/p>",
+          "button_label": "Button",
+          "button_link": ""
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "featured_colelction": "frontpage",
+          "title": "Featured Collection"
+        }
+      },
+      "footer-section": {
+        "type": "footer-section",
+        "blocks": {
+          "link_list_Lr9tJE": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "text_kPYgLn": {
+            "type": "text",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Thiet_ke_chua_co_ten.svg",
+              "title": "Store information",
+              "description": "<p>Address: KTX khu A, Linh Trung, Thu Duc, HCM<br\/>Phone: 0766790335<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "link_list_Lr9tJE",
+          "text_kPYgLn"
+        ],
+        "settings": {
+          "col_num": 3,
+          "enable_payment_type_icons": true
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
