@@ -30,3 +30,33 @@ if( document.getElementById('AddressCountryNew') != null ) {
         provinceSelector.innerHTML = options;
     });
 }
+
+if(document.getElementById("forgotPassword") != null) {
+    const forgotPasswordLink = document.getElementById("forgotPassword");
+    const haveAccountLink = document.getElementById("Login");
+    const forgotPasswordForm = document.querySelector("#forgot_password_form");
+    const loginForm = document.querySelector("#login-form");
+
+    // Function to toggle visibility
+    function toggleForms() {
+        forgotPasswordForm.classList.toggle("d-none");
+        loginForm.classList.toggle("d-none");
+    }
+
+    // Check and add event listener for "Forgot your password?"
+    if (forgotPasswordLink !== null) {
+        forgotPasswordLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            toggleForms();
+        });
+    }
+
+    // Check and add event listener for "Have account?"
+    if (haveAccountLink !== null) {
+        haveAccountLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            toggleForms();
+        });
+    }
+    
+}
