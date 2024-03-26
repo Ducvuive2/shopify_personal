@@ -19,7 +19,7 @@
       "featured-collection": {
         "type": "featured-collection",
         "settings": {
-          "featured_colelction": "frontpage",
+          "featured_colelction": "ducvuive2s-brand",
           "title": "Featured Collection"
         }
       },
@@ -49,6 +49,11 @@
         "settings": {
           "col_num": 3,
           "enable_payment_type_icons": true
+        }
+      },
+      "translation": {
+        "type": "translation",
+        "settings": {
         }
       }
     },
