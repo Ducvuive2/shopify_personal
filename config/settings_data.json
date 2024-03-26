@@ -1,5 +1,7 @@
 {
   "current": {
+    "header_text_font": "cooper_bt_n5",
+    "body_font_size": 17,
     "sections": {
       "header": {
         "type": "header",
@@ -53,6 +55,11 @@
       },
       "translation": {
         "type": "translation",
+        "settings": {
+        }
+      },
+      "sidebar": {
+        "type": "sidebar",
         "settings": {
         }
       }
