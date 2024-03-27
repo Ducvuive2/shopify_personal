@@ -1,20 +1,20 @@
 {
-    "general": {
-      "404": {
-        "title": "Không tìm thấy trang",
-        "subtext_html": "Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa. <br> Hãy kiểm tra lại đường dẫn hoặc quay lại trang chủ."
-      },
-      "Cart": {
-        "title": "Giỏ hàng"
-      },
-      "Blog": {
-        "title": "Blog"
-      },
-      "Layout": {
-        "login_text": "Đăng nhập",
-        "logout_text": "Đăng xuất",
-        "register_text": "Đăng ký",
-        "account_text": "Tài khoản"
-      }
+  "general": {
+    "404": {
+      "title": "Không tìm thấy trang",
+      "subtext_html": "Trang bạn đang tìm kiếm không tồn tại hoặc đã bị xóa. <br> Hãy kiểm tra lại đường dẫn hoặc quay lại trang chủ."
+    },
+    "Cart": {
+      "title": "Giỏ hàng"
+    },
+    "Blog": {
+      "title": "Blog"
+    },
+    "Layout": {
+      "login_text": "Đăng nhập",
+      "logout_text": "Đăng xuất",
+      "register_text": "Đăng ký",
+      "account_text": "Tài khoản"
     }
   }
+}
