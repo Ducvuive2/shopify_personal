@@ -54,3 +54,24 @@
         ]
 }
 {% endschema %}
+
+{% assign variants_counter = 0 %}
+
+<script type="application/json" data-product-json>
+  {
+    "product": {
+      "id":{{product.id | json}},"available":{{product.available | json}},"handle":{{product.handle | json}},"title":{{product.title | json}},"vendor":{{product.vendor | json}},"type":{{product.type | json}},"price":{{product.price | json}},"price_min":{{product.price_min | json}},"price_max":{{product.price_max | json}},"images":{{product.images | json}},"options":{{product.options | json}},
+      "variants":[
+        {%- for my_variant in product.variants -%}
+          {%- if variants_counter > 0 -%}
+            {{","}}
+          {%- endif -%}
+          {"id":{{my_variant.id | json}},"available":{{my_variant.available | json}},"compare_at_price":{{my_variant.compare_at_price | json}},"price":{{my_variant.price | json}},"title":{{my_variant.title | json}},"options":{{my_variant.options | json}},"option1":{{my_variant.option1 | json}},"option2":{{my_variant.option2 | json}}
+          ,"inventory_quantity":{{my_variant.inventory_quantity | json}}}
+          {%- assign variants_counter = variants_counter | plus: 1 -%}
+        {%- endfor -%}
+      ],
+    },
+    "selected_variant_id": {{ product.selected_or_first_available_variant.id }}
+  }
+</script>

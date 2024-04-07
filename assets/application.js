@@ -92,6 +92,15 @@ if(productInfoAnchors.length > 0) {
                 document.getElementById("productInfoPrice").innerHTML = item.getAttribute('product-price');
                 document.getElementById("productInfoDescription").innerHTML = data.description;
 
+                // Add variants to select cart in Collection
+                var variants = data.variants;
+                var variantSelect = document.getElementById("modalItemID");
+                variantSelect.innerHTML = '';
+                variants.forEach(function( variant, index) {
+                    console.log(variant);
+                    variantSelect.options[variantSelect.options.length] = new Option(variant.title, variant.id);
+                });
+
                 productModal.show();
             });
 
@@ -99,3 +108,5 @@ if(productInfoAnchors.length > 0) {
         });
     });
 }
+
+
