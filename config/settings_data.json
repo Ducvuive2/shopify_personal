@@ -40,7 +40,7 @@
             "type": "link_list",
             "settings": {
               "title": "Quick Links",
-              "menu": "main-menu"
+              "menu": "link-footer"
             }
           }
         },
