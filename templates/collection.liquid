@@ -23,7 +23,7 @@
         <div class="col-3 g-2">
           <div class="card" style="width: 18rem;">
               {% if image != blank %}
-                <a href="#" id="productInfoAnchor" product-handle="{{ product.handle }}" product-price="{{ product.price | | money_without_trailing_zeros }}">
+                <a href="#" id="productInfoAnchor" product-handle="{{ product.handle }}" product-price="{{ product.price | money_without_trailing_zeros }}">
                   <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
                 </a>
                   {% else %}
@@ -76,4 +76,13 @@
       </div>
     </div>
   </div>
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ product.price | | money_without_trailing_zeros }}"
+  to: "{{ product.price | money_without_trailing_zeros }}"
+  position: 1042..1092
+{%- endcomment -%}
